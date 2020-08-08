@@ -1,0 +1,616 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		27313FC524DEF4DB00985C1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27313FC424DEF4DB00985C1A /* AppDelegate.swift */; };
+		27313FC724DEF4DB00985C1A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27313FC624DEF4DB00985C1A /* SceneDelegate.swift */; };
+		27313FC924DEF4DB00985C1A /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27313FC824DEF4DB00985C1A /* FirstViewController.swift */; };
+		27313FCB24DEF4DB00985C1A /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27313FCA24DEF4DB00985C1A /* SecondViewController.swift */; };
+		27313FCE24DEF4DB00985C1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27313FCC24DEF4DB00985C1A /* Main.storyboard */; };
+		27313FD124DEF4DB00985C1A /* Theia.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 27313FCF24DEF4DB00985C1A /* Theia.xcdatamodeld */; };
+		27313FD324DEF4DC00985C1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27313FD224DEF4DC00985C1A /* Assets.xcassets */; };
+		27313FD624DEF4DC00985C1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27313FD424DEF4DC00985C1A /* LaunchScreen.storyboard */; };
+		27313FE124DEF4DD00985C1A /* TheiaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27313FE024DEF4DD00985C1A /* TheiaTests.swift */; };
+		27313FEC24DEF4DD00985C1A /* TheiaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27313FEB24DEF4DD00985C1A /* TheiaUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		27313FDD24DEF4DD00985C1A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27313FB924DEF4DB00985C1A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27313FC024DEF4DB00985C1A;
+			remoteInfo = Theia;
+		};
+		27313FE824DEF4DD00985C1A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27313FB924DEF4DB00985C1A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27313FC024DEF4DB00985C1A;
+			remoteInfo = Theia;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		27313FC124DEF4DB00985C1A /* Theia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Theia.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		27313FC424DEF4DB00985C1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		27313FC624DEF4DB00985C1A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		27313FC824DEF4DB00985C1A /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		27313FCA24DEF4DB00985C1A /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		27313FCD24DEF4DB00985C1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		27313FD024DEF4DB00985C1A /* Theia.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Theia.xcdatamodel; sourceTree = "<group>"; };
+		27313FD224DEF4DC00985C1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		27313FD524DEF4DC00985C1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		27313FD724DEF4DD00985C1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27313FDC24DEF4DD00985C1A /* TheiaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheiaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		27313FE024DEF4DD00985C1A /* TheiaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheiaTests.swift; sourceTree = "<group>"; };
+		27313FE224DEF4DD00985C1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27313FE724DEF4DD00985C1A /* TheiaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheiaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		27313FEB24DEF4DD00985C1A /* TheiaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheiaUITests.swift; sourceTree = "<group>"; };
+		27313FED24DEF4DD00985C1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		27313FBE24DEF4DB00985C1A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27313FD924DEF4DD00985C1A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27313FE424DEF4DD00985C1A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		27313FB824DEF4DB00985C1A = {
+			isa = PBXGroup;
+			children = (
+				27313FC324DEF4DB00985C1A /* Theia */,
+				27313FDF24DEF4DD00985C1A /* TheiaTests */,
+				27313FEA24DEF4DD00985C1A /* TheiaUITests */,
+				27313FC224DEF4DB00985C1A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		27313FC224DEF4DB00985C1A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				27313FC124DEF4DB00985C1A /* Theia.app */,
+				27313FDC24DEF4DD00985C1A /* TheiaTests.xctest */,
+				27313FE724DEF4DD00985C1A /* TheiaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		27313FC324DEF4DB00985C1A /* Theia */ = {
+			isa = PBXGroup;
+			children = (
+				27313FC424DEF4DB00985C1A /* AppDelegate.swift */,
+				27313FC624DEF4DB00985C1A /* SceneDelegate.swift */,
+				27313FC824DEF4DB00985C1A /* FirstViewController.swift */,
+				27313FCA24DEF4DB00985C1A /* SecondViewController.swift */,
+				27313FCC24DEF4DB00985C1A /* Main.storyboard */,
+				27313FD224DEF4DC00985C1A /* Assets.xcassets */,
+				27313FD424DEF4DC00985C1A /* LaunchScreen.storyboard */,
+				27313FD724DEF4DD00985C1A /* Info.plist */,
+				27313FCF24DEF4DB00985C1A /* Theia.xcdatamodeld */,
+			);
+			path = Theia;
+			sourceTree = "<group>";
+		};
+		27313FDF24DEF4DD00985C1A /* TheiaTests */ = {
+			isa = PBXGroup;
+			children = (
+				27313FE024DEF4DD00985C1A /* TheiaTests.swift */,
+				27313FE224DEF4DD00985C1A /* Info.plist */,
+			);
+			path = TheiaTests;
+			sourceTree = "<group>";
+		};
+		27313FEA24DEF4DD00985C1A /* TheiaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				27313FEB24DEF4DD00985C1A /* TheiaUITests.swift */,
+				27313FED24DEF4DD00985C1A /* Info.plist */,
+			);
+			path = TheiaUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		27313FC024DEF4DB00985C1A /* Theia */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27313FF024DEF4DD00985C1A /* Build configuration list for PBXNativeTarget "Theia" */;
+			buildPhases = (
+				27313FBD24DEF4DB00985C1A /* Sources */,
+				27313FBE24DEF4DB00985C1A /* Frameworks */,
+				27313FBF24DEF4DB00985C1A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Theia;
+			productName = Theia;
+			productReference = 27313FC124DEF4DB00985C1A /* Theia.app */;
+			productType = "com.apple.product-type.application";
+		};
+		27313FDB24DEF4DD00985C1A /* TheiaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27313FF324DEF4DD00985C1A /* Build configuration list for PBXNativeTarget "TheiaTests" */;
+			buildPhases = (
+				27313FD824DEF4DD00985C1A /* Sources */,
+				27313FD924DEF4DD00985C1A /* Frameworks */,
+				27313FDA24DEF4DD00985C1A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				27313FDE24DEF4DD00985C1A /* PBXTargetDependency */,
+			);
+			name = TheiaTests;
+			productName = TheiaTests;
+			productReference = 27313FDC24DEF4DD00985C1A /* TheiaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		27313FE624DEF4DD00985C1A /* TheiaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27313FF624DEF4DD00985C1A /* Build configuration list for PBXNativeTarget "TheiaUITests" */;
+			buildPhases = (
+				27313FE324DEF4DD00985C1A /* Sources */,
+				27313FE424DEF4DD00985C1A /* Frameworks */,
+				27313FE524DEF4DD00985C1A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				27313FE924DEF4DD00985C1A /* PBXTargetDependency */,
+			);
+			name = TheiaUITests;
+			productName = TheiaUITests;
+			productReference = 27313FE724DEF4DD00985C1A /* TheiaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		27313FB924DEF4DB00985C1A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "Kyle Schneider";
+				TargetAttributes = {
+					27313FC024DEF4DB00985C1A = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					27313FDB24DEF4DD00985C1A = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 27313FC024DEF4DB00985C1A;
+					};
+					27313FE624DEF4DD00985C1A = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 27313FC024DEF4DB00985C1A;
+					};
+				};
+			};
+			buildConfigurationList = 27313FBC24DEF4DB00985C1A /* Build configuration list for PBXProject "Theia" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 27313FB824DEF4DB00985C1A;
+			productRefGroup = 27313FC224DEF4DB00985C1A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				27313FC024DEF4DB00985C1A /* Theia */,
+				27313FDB24DEF4DD00985C1A /* TheiaTests */,
+				27313FE624DEF4DD00985C1A /* TheiaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		27313FBF24DEF4DB00985C1A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27313FD624DEF4DC00985C1A /* LaunchScreen.storyboard in Resources */,
+				27313FD324DEF4DC00985C1A /* Assets.xcassets in Resources */,
+				27313FCE24DEF4DB00985C1A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27313FDA24DEF4DD00985C1A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27313FE524DEF4DD00985C1A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		27313FBD24DEF4DB00985C1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27313FD124DEF4DB00985C1A /* Theia.xcdatamodeld in Sources */,
+				27313FCB24DEF4DB00985C1A /* SecondViewController.swift in Sources */,
+				27313FC924DEF4DB00985C1A /* FirstViewController.swift in Sources */,
+				27313FC524DEF4DB00985C1A /* AppDelegate.swift in Sources */,
+				27313FC724DEF4DB00985C1A /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27313FD824DEF4DD00985C1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27313FE124DEF4DD00985C1A /* TheiaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27313FE324DEF4DD00985C1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27313FEC24DEF4DD00985C1A /* TheiaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		27313FDE24DEF4DD00985C1A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 27313FC024DEF4DB00985C1A /* Theia */;
+			targetProxy = 27313FDD24DEF4DD00985C1A /* PBXContainerItemProxy */;
+		};
+		27313FE924DEF4DD00985C1A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 27313FC024DEF4DB00985C1A /* Theia */;
+			targetProxy = 27313FE824DEF4DD00985C1A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		27313FCC24DEF4DB00985C1A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27313FCD24DEF4DB00985C1A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		27313FD424DEF4DC00985C1A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27313FD524DEF4DC00985C1A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		27313FEE24DEF4DD00985C1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		27313FEF24DEF4DD00985C1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		27313FF124DEF4DD00985C1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KA82GFL6C2;
+				INFOPLIST_FILE = Theia/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.KyleSchneider.Theia;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		27313FF224DEF4DD00985C1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KA82GFL6C2;
+				INFOPLIST_FILE = Theia/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.KyleSchneider.Theia;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		27313FF424DEF4DD00985C1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KA82GFL6C2;
+				INFOPLIST_FILE = TheiaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.KyleSchneider.TheiaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Theia.app/Theia";
+			};
+			name = Debug;
+		};
+		27313FF524DEF4DD00985C1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KA82GFL6C2;
+				INFOPLIST_FILE = TheiaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.KyleSchneider.TheiaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Theia.app/Theia";
+			};
+			name = Release;
+		};
+		27313FF724DEF4DD00985C1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KA82GFL6C2;
+				INFOPLIST_FILE = TheiaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.KyleSchneider.TheiaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Theia;
+			};
+			name = Debug;
+		};
+		27313FF824DEF4DD00985C1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KA82GFL6C2;
+				INFOPLIST_FILE = TheiaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.KyleSchneider.TheiaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Theia;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		27313FBC24DEF4DB00985C1A /* Build configuration list for PBXProject "Theia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27313FEE24DEF4DD00985C1A /* Debug */,
+				27313FEF24DEF4DD00985C1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27313FF024DEF4DD00985C1A /* Build configuration list for PBXNativeTarget "Theia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27313FF124DEF4DD00985C1A /* Debug */,
+				27313FF224DEF4DD00985C1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27313FF324DEF4DD00985C1A /* Build configuration list for PBXNativeTarget "TheiaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27313FF424DEF4DD00985C1A /* Debug */,
+				27313FF524DEF4DD00985C1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27313FF624DEF4DD00985C1A /* Build configuration list for PBXNativeTarget "TheiaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27313FF724DEF4DD00985C1A /* Debug */,
+				27313FF824DEF4DD00985C1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		27313FCF24DEF4DB00985C1A /* Theia.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				27313FD024DEF4DB00985C1A /* Theia.xcdatamodel */,
+			);
+			currentVersion = 27313FD024DEF4DB00985C1A /* Theia.xcdatamodel */;
+			path = Theia.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 27313FB924DEF4DB00985C1A /* Project object */;
+}
