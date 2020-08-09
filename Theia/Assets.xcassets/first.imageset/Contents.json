@@ -1,12 +1,17 @@
 {
   "images" : [
     {
-      "idiom" : "universal",
-      "filename" : "first.pdf"
+      "idiom" : "universal"
+    },
+    {
+      "idiom" : "iphone"
     }
   ],
   "info" : {
-    "version" : 1,
-    "author" : "xcode"
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "preserves-vector-representation" : true
   }
 }
