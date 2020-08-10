@@ -34,6 +34,7 @@ class Formulas: NSObject {
 //        Needs completion (should rotate with time and based on prime meridian)
         let angleOfAscension = rightAscension + timeSince - 90
         return angleOfAscension
+        
     }
     
     func angleOfAscensionAndDeclinationToXYZ(angleOfAscension : Double, Declination : Double) -> (Double, Double, Double) {

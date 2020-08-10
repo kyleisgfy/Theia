@@ -19,6 +19,11 @@ class FirstViewController: UIViewController, UIPickerViewDataSource, UIPickerVie
     
     var content = ""
     var catalogue:[[CustomStringConvertible]] = []
+    var selection = 0
+    var rightAscension:Double = 0.0
+    var delination:Double = 0.0
+    var azimuth:Double = 0.0
+    var altitude:Double = 0.0
     
     
 
@@ -29,8 +34,61 @@ class FirstViewController: UIViewController, UIPickerViewDataSource, UIPickerVie
         objectSelector.dataSource = self
         objectSelector.delegate = self
         
+    }
+    
+    func convertToDegrees() {
         
+        parseRightAscension(selection: selection)
+        parseDeclination(selection: selection)
+    }
+    
+    func parseRightAscension(selection: Int) -> Float {
+        var string = (catalogue[selection][3] as! String)
         
+        string = string.replacingOccurrences(of: "\"", with: "", options: NSString.CompareOptions.literal, range:nil)
+        string = string.replacingOccurrences(of: "h", with: "", options: NSString.CompareOptions.literal, range:nil)
+        string = string.replacingOccurrences(of: "'", with: "", options: NSString.CompareOptions.literal, range:nil)
+        
+        print(catalogue[selection][3])
+        print("Right Ascension: \(string)")
+        
+        let parts = string.components(separatedBy: " ")
+        let hours = Float(parts[0]) ?? 0.0
+        let minutes = (Float(parts[1]) ?? 0.0) / 60
+        let seconds = (Float(parts[1]) ?? 0.0)/3600
+        let degrees = (hours + minutes + seconds) * 15
+        
+        print("Degrees: \(degrees)")
+        print("")
+        return degrees
+        
+    }
+    
+    func parseDeclination(selection: Int) -> Float {
+        var string = (catalogue[selection][4] as! String)
+                            
+                            
+        string = string.replacingOccurrences(of: "\"", with: "", options: NSString.CompareOptions.literal, range:nil)
+        string = string.replacingOccurrences(of: "º", with: "", options: NSString.CompareOptions.literal, range:nil)
+        string = string.replacingOccurrences(of: "'", with: "", options: NSString.CompareOptions.literal, range:nil)
+        
+        print(catalogue[selection][4])
+        print("Declination: \(string)")
+        
+        let parts = string.components(separatedBy: " ")
+        let hours = Float(parts[0]) ?? 0.0
+        let minutes = (Float(parts[0]) ?? 0.0) / 60
+        let seconds = (Float(parts[0]) ?? 0.0)/3600
+        var degrees:Float = 0.0
+        if hours < 0 {
+            degrees = (hours - minutes - seconds)
+        } else {
+            degrees = (hours + minutes + seconds)
+        }
+                            
+        print("Degrees: \(degrees)")
+        print("")
+        return degrees
     }
     
     func updateCatalgue(file: String) {
@@ -67,8 +125,11 @@ class FirstViewController: UIViewController, UIPickerViewDataSource, UIPickerVie
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        self.rightAscensionLabel.text = (catalogue[row][3] as!String)
-        self.declinationLabel.text = (catalogue[row][4] as!String)
+        self.rightAscensionLabel.text = (catalogue[row][3] as! String)
+        self.declinationLabel.text = (catalogue[row][4] as! String)
+        selection = row
+        
+        
         
         return (catalogue [row][0] as! String)
     }
