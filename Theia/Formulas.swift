@@ -8,9 +8,12 @@
 
 import Foundation
 
-class Formulas: NSObject {
+public class Formulas: NSObject {
+    
+//    let formulas = Formulas()
     
     let siderealDay = 86164.0905
+
 
 
     func toDegrees(radians : Double) -> Double {

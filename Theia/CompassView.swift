@@ -13,6 +13,9 @@ class CompassView: UIView {
     var trueNorth:CGFloat = 0
     var pointedNorth = false
     
+    var longitude:Double = 0.0
+    var latitude:Double = 0.0
+    
     
     override func draw(_ rect: CGRect) {
     
@@ -23,6 +26,9 @@ class CompassView: UIView {
         
         updateCompass(user: currentContext, isFilled: pointedNorth)
         compassLines(user: currentContext, isFilled: false)
+        
+        
+        
     }
     
     func updateView() {

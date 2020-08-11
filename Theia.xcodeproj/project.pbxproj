@@ -20,7 +20,7 @@
 		27313FFE24DEF6F500985C1A /* LevelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27313FFD24DEF6F500985C1A /* LevelView.swift */; };
 		2731400024DEF70200985C1A /* CompassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27313FFF24DEF70200985C1A /* CompassView.swift */; };
 		2731400224DEFCF000985C1A /* Catalogue.csv in Resources */ = {isa = PBXBuildFile; fileRef = 2731400124DEFCF000985C1A /* Catalogue.csv */; };
-		2731400624DFF9E300985C1A /* Formulas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2731400524DFF9E300985C1A /* Formulas.swift */; };
+		2731400A24E1269900985C1A /* Formulas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2731400924E1269900985C1A /* Formulas.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,7 +60,7 @@
 		27313FFD24DEF6F500985C1A /* LevelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelView.swift; sourceTree = "<group>"; };
 		27313FFF24DEF70200985C1A /* CompassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompassView.swift; sourceTree = "<group>"; };
 		2731400124DEFCF000985C1A /* Catalogue.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Catalogue.csv; sourceTree = "<group>"; };
-		2731400524DFF9E300985C1A /* Formulas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formulas.swift; sourceTree = "<group>"; };
+		2731400924E1269900985C1A /* Formulas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formulas.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,8 +115,8 @@
 				27313FC624DEF4DB00985C1A /* SceneDelegate.swift */,
 				27313FC824DEF4DB00985C1A /* FirstViewController.swift */,
 				27313FCA24DEF4DB00985C1A /* SecondViewController.swift */,
-				2731400524DFF9E300985C1A /* Formulas.swift */,
 				27313FCC24DEF4DB00985C1A /* Main.storyboard */,
+				2731400924E1269900985C1A /* Formulas.swift */,
 				27313FFD24DEF6F500985C1A /* LevelView.swift */,
 				27313FFF24DEF70200985C1A /* CompassView.swift */,
 				27313FD224DEF4DC00985C1A /* Assets.xcassets */,
@@ -280,7 +280,7 @@
 			files = (
 				2731400024DEF70200985C1A /* CompassView.swift in Sources */,
 				27313FD124DEF4DB00985C1A /* Theia.xcdatamodeld in Sources */,
-				2731400624DFF9E300985C1A /* Formulas.swift in Sources */,
+				2731400A24E1269900985C1A /* Formulas.swift in Sources */,
 				27313FFE24DEF6F500985C1A /* LevelView.swift in Sources */,
 				27313FCB24DEF4DB00985C1A /* SecondViewController.swift in Sources */,
 				27313FC924DEF4DB00985C1A /* FirstViewController.swift in Sources */,

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Foundation
 
 class FirstViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
     
@@ -17,31 +18,47 @@ class FirstViewController: UIViewController, UIPickerViewDataSource, UIPickerVie
     @IBOutlet weak var azimuthLabel: UILabel!
     @IBOutlet weak var altitudeLabel: UILabel!
     
+    @IBOutlet weak var longitudeLabel: UILabel!
+    @IBOutlet weak var latitudeLabel: UILabel!
+    
+    
     var content = ""
     var catalogue:[[CustomStringConvertible]] = []
     var selection = 0
     var rightAscension:Double = 0.0
-    var delination:Double = 0.0
+    var declination:Double = 0.0
     var azimuth:Double = 0.0
     var altitude:Double = 0.0
+    var longitude:Double = 0.0
+    var latitude:Double = 0.0
+    var timeSince:Double = 0.0
     
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+//        (azimuth, altitude) = Formulas().rightAscensionAndDeclinationToAzimuthAndAltitude(rightAscension: rightAscension, declination: declination, longitude: longitude, latitude: latitude, now: timeSince)
+
+        
         updateCatalgue(file: "Catalogue")
         objectSelector.dataSource = self
         objectSelector.delegate = self
         
-    }
-    
-    func convertToDegrees() {
         
-        parseRightAscension(selection: selection)
-        parseDeclination(selection: selection)
+        
+        
     }
     
+//    func convertToDegrees() {
+////        let formulas = Formulas()
+//
+//        rightAscension = Double(parseRightAscension(selection: selection)) as Double
+//        declination = Double(parseDeclination(selection: selection)) as Double
+//        (azimuth, altitude) = Formulas.rightAscensionAndDeclinationToAzimuthAndAltitude(rightAscension: rightAscension, declination: declination, longitude: longitude, latitude: latitude, now: timeSince)
+//    }
+//
     func parseRightAscension(selection: Int) -> Float {
         var string = (catalogue[selection][3] as! String)
         
@@ -127,7 +144,14 @@ class FirstViewController: UIViewController, UIPickerViewDataSource, UIPickerVie
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         self.rightAscensionLabel.text = (catalogue[row][3] as! String)
         self.declinationLabel.text = (catalogue[row][4] as! String)
+        
+//        self.longitudeLabel.text = String(secondViewController.longitude)
+//        self.latitudeLabel.text = String(compassView.latitude)
+        
         selection = row
+        
+        rightAscension = Double(parseRightAscension(selection: selection)) as Double
+        declination = Double(parseDeclination(selection: selection)) as Double
         
         
         
